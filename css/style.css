@@ -21,3 +21,22 @@ h6 {
 p {
   margin: 0;
 }
+
+.page-section {
+  display: grid;
+  grid-template-areas: 'heading content';
+  grid-template-columns: 15% 85%;
+}
+
+.left-side-header {
+  grid-area: heading;
+  border-right: 2px solid grey;
+  margin-top: 20px;
+
+}
+
+.about_me_p {
+  grid-area: content;
+  padding-left: 30px;
+  margin-top: 30px;
+}
