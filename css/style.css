@@ -2,8 +2,8 @@
   --top-bg-color: #354f52;
   --sidebar-background: #2f3e46;
   --hover-link-text: #cad2c5;
-  --main-text-color: #84a98c;
-  --main-bg-color: #52796f;
+  --main-background: #84a98c;
+  --main-text-color: #52796f;
 }
 
 * {
@@ -79,6 +79,7 @@ body {
   display: grid;
   grid-template-areas: "heading content";
   grid-template-columns: 15% 85%;
+  background-color: var(--main-background);
 }
 
 .left-side-header {
@@ -94,6 +95,10 @@ body {
   grid-area: content;
   margin: 30px;
   width: 900px;
+}
+.my-photo {
+  float: left;
+  margin: 0 20px 10px 0;
 }
 
 .banner-text {
