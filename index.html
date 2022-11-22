@@ -10,67 +10,102 @@
 
   <body>
     <!-- main logo / nav -->
-    <header>
-      <h1>Victoria Chechelnytska</h1>
-      <nav>
-        <ul>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact Me</a></li>
-          <li><a href="#">Resume</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="wrapper">
+      <header class="name-and-navigation">
+        <h1 class="my-name">Victoria Chechelnytska</h1>
+        <nav>
+          <ul class="list-with-links">
+            <li><a href="#about" class="navigation-list-item">About me</a></li>
+            <li><a href="#work" class="navigation-list-item">Work</a></li>
+            <li>
+              <a href="#contact" class="navigation-list-item">Contact Me</a>
+            </li>
+            <li><a href="#" class="navigation-list-item">Resume</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <!-- hero banner -->
-    <section class="hero-banner">
-      <div>
-        <h2>Junior Web Developer</h2>
-      </div>
-    </section>
-
-    <main class="page-wrapper">
-      <!-- about me -->
-      <section class="page-section" id="about">
-        <h2 class="left-side-header">About Me</h2>
-        <p class="about_me_p">
-          "At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-          et quas molestias excepturi sint occaecati cupiditate non provident,
-          similique sunt in culpa qui officia deserunt mollitia animi, id est
-          laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-          distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
-          cumque nihil impedit quo minus id quod maxime placeat facere possimus,
-          omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
-          autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-          eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-          Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-          voluptatibus maiores alias consequatur aut perferendis doloribus
-          asperiores repellat."
-        </p>
+      <!-- hero banner -->
+      <section class="hero-banner">
+        <div>
+          <h2 class="banner-text">Junior Web Developer</h2>
+        </div>
       </section>
 
-      <!-- portfolio container -->
-      <section class="page-section" id="work">
-        <h2 class="left-side-header">Work</h2>
-      </section>
+      <main class="page-wrapper">
+        <!-- about me -->
+        <section class="page-section" id="about">
+          <h2 class="left-side-header">About Me</h2>
+          <div class="about-me-text">
+            
+            <p>
+              "At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia
+              animi, id est laborum et dolorum fuga. Et harum quidem rerum
+              facilis est et expedita distinctio. Nam libero tempore, cum soluta
+              nobis est eligendi optio cumque nihil impedit quo minus id quod
+              maxime placeat facere possimus, omnis voluptas assumenda est,
+              omnis dolor repellendus. Temporibus autem quibusdam et aut
+              officiis debitis aut rerum necessitatibus saepe eveniet ut et
+              voluptates repudiandae sint et molestiae non recusandae. Itaque
+              earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+              voluptatibus maiores alias consequatur aut perferendis doloribus
+              asperiores repellat."
+            </p>
+            <p>
+              "At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia
+              animi, id est laborum et dolorum fuga. Et harum quidem rerum
+              facilis est et expedita distinctio. Nam libero tempore, cum soluta
+              nobis est eligendi optio cumque nihil impedit quo minus id quod
+              maxime placeat facere possimus, omnis voluptas assumenda est,
+              omnis dolor repellendus. Temporibus autem quibusdam et aut
+              officiis debitis aut rerum necessitatibus saepe eveniet ut et
+              voluptates repudiandae sint et molestiae non recusandae. Itaque
+              earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+              voluptatibus maiores alias consequatur aut perferendis doloribus
+              asperiores repellat."
+            </p>
+          </div>
+        </section>
 
-      <!-- contact -->
-      <section class="page-section contact" id="contact">
-        <h2 class="left-side-header">Contact Me</h2>
-        <ul>
-          <li>
-            <a
-              class="contact-link"
-              href="mailto:my_email@gmail.com?subject=Job opportunity for Victoria"
-            >
-              my_email@gmail.com</a
-            >
-          </li>
-          <li><a href="tel:+555555555">+555555555</a></li>
-          <li><a href="https://github.com/MarilynWho">MarilynWho</a></li>
-        </ul>
-      </section>
-    </main>
+        <!-- portfolio container -->
+        <section class="page-section" id="work">
+          <h2 class="left-side-header">Work</h2>
+        </section>
+
+        <!-- contact -->
+        <section class="page-section contact" id="contact">
+          <h2 class="left-side-header">Contact Me</h2>
+          <ul class="contacts-list">
+            <li>
+              <a
+                class="contact-list-item"
+                class="contact-link"
+                href="mailto:my_email@gmail.com?subject=Job opportunity for Victoria"
+              >
+                my_email@gmail.com</a
+              >
+            </li>
+            <li>
+              <a class="contact-list-item" href="tel:+555555555"
+                >+555555555</a
+              >
+            </li>
+            <li>
+              <a
+                class="contact-list-item"
+                href="https://github.com/MarilynWho"
+                >MarilynWho</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

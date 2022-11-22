@@ -1,42 +1,101 @@
+:root {
+  --top-bg-color: #354f52;
+  --sidebar-background: #2f3e46;
+  --hover-link-text: #cad2c5;
+  --main-text-color: #84a98c;
+  --main-bg-color: #52796f;
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
+  color: var(--sidebar-background);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.name-and-navigation {
+  padding: 20px;
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-p {
-  margin: 0;
+.list-with-links, .contacts-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
+.list-with-links {
+  align-items: center;
+}
+.contacts-list{
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.navigation-list-item, .contact-list-item {
+  text-decoration: none;
+  --nav-color: var(--sidebar-background);
+  color: var(--nav-color);
+}
+
+.navigation-list-item {
+  padding-left: 15px;
+}
+
+.navigation-list-item:hover,
+.navigation-list-item:focus, 
+.contact-list-item:hover,
+.contact-list-item:focus {
+  --nav-color: var(--hover-link-text);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0px auto;
+}
+
+.hero-banner {
+  text-align: end;
+  padding: 30px;
+  background-color: var(--top-bg-color);
+}
+
+/* divide page into grid */
 .page-section {
   display: grid;
-  grid-template-areas: 'heading content';
+  grid-template-areas: "heading content";
   grid-template-columns: 15% 85%;
 }
 
 .left-side-header {
   grid-area: heading;
-  border-right: 2px solid grey;
   margin-top: 20px;
-
+  padding: 20px;
+  text-align: end;
+  background-color: var(--sidebar-background);
+  color: var(--hover-link-text);
 }
 
-.about_me_p {
+.about-me-text {
   grid-area: content;
-  padding-left: 30px;
-  margin-top: 30px;
+  margin: 30px;
+  width: 900px;
+}
+
+.banner-text {
+  color: var(--hover-link-text);
 }
