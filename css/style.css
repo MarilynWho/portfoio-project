@@ -122,7 +122,6 @@ body {
 .first-portfolio-item {
   grid-area: first-project;
   background-image: url("../images/02-portfolio-1.jpg");
-  text-decoration: none;
 }
 
 .second {
@@ -158,6 +157,7 @@ body {
   cursor: pointer;
   display: block;
   align-content: end;
+  text-decoration: none;
 }
 
 .portfolio-link {
