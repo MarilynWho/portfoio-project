@@ -2,7 +2,7 @@
   --top-bg-color: #354f52;
   --sidebar-background: #2f3e46;
   --hover-link-text: #cad2c5;
-  --main-background: #84a98c;
+  --main-background: rgb(132, 169, 140);
   --text-color: #52796f;
 }
 
@@ -121,27 +121,27 @@ body {
 
 .first-portfolio-item {
   grid-area: first-project;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/refactor.png");
 }
 
 .second {
   grid-area: second;
-  background-image: url("../images/02-portfolio-2.jpg");
+  background-image: url("../images/go-it.jpg");
 }
 
 .third {
   grid-area: third;
-  background-image: url("../images/02-portfolio-3.jpg");
+  background-image: url("../images/css-grid.png");
 }
 
 .forth {
   grid-area: forth;
-  background-image: url("../images/02-portfolio-4.jpg");
+  background-image: url("../images/holdim.png");
 }
 
 .fifth {
   grid-area: fifth;
-  background-image: url("../images/02-run-buddy.jpg");
+  background-image: url("../images/my-cv.png");
 }
 
 .first-portfolio-item,
@@ -158,15 +158,15 @@ body {
   display: block;
   align-content: end;
   text-decoration: none;
+  position: relative;
 }
 
 .portfolio-link {
-  position: relative;
+  position: absolute;
   top: 20px;
-  background-color: var(--main-background);
+  background-color: var(--hover-link-text);
   color: var(--sidebar-background);
   padding: 10px;
   margin: 10px;
-
   display: inline;
 }
