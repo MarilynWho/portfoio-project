@@ -2,8 +2,8 @@
   --top-bg-color: #354f52;
   --sidebar-background: #2f3e46;
   --hover-link-text: #cad2c5;
-  --main-background: rgb(132, 169, 140);
-  --text-color: #52796f;
+  --main-background: #84a98c;
+  /* --text-color: #52796f; */
 }
 
 * {
@@ -21,6 +21,7 @@ body {
   color: var(--sidebar-background);
 }
 
+/* Navigation section */
 .name-and-navigation {
   padding: 20px;
   margin: 0 50px;
@@ -70,6 +71,7 @@ body {
   margin: 0px auto;
 }
 
+/* Banner */
 .hero-banner {
   text-align: end;
   padding: 30px;
@@ -107,6 +109,7 @@ body {
   color: var(--hover-link-text);
 }
 
+/* Grid with my works */
 .list-portfolio {
   margin: 30px;
   width: 90%;
@@ -153,14 +156,28 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 5px;
   cursor: pointer;
   display: block;
   align-content: end;
   text-decoration: none;
   position: relative;
+  filter: sepia(100%) hue-rotate(60deg);
 }
 
+.first-portfolio-item:hover,
+.second:hover,
+.third:hover,
+.forth:hover,
+.fifth:hover,
+.first-portfolio-item:focus,
+.second:focus,
+.third:focus,
+.forth:focus,
+.fifth:focus{
+  filter: sepia(0%) hue-rotate(0deg);
+} 
+
+/* Text on picture */
 .portfolio-link {
   position: absolute;
   top: 20px;
