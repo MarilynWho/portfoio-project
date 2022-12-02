@@ -114,45 +114,58 @@ body {
   margin: 30px;
   width: 90%;
   min-height: 500px;
-  height: 70vh;
+  /* height: 70vh; */
   list-style: none;
-  display: grid;
-  grid-template-areas: "first-project first-project" "first-project first-project" "second third" "forth fifth";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 25% 25% 25% 25%;
+  display: flex;
+  flex-direction: column;
 }
 
-.first-portfolio-item {
-  grid-area: first-project;
+.first-item {
+  width: 95%;
+  height: 50%;
+  margin-bottom: 10px;
+  align-content: center;
+}
+
+.horiseon {
+  width: 100%;
+  height: 100%;
   background-image: url("../images/refactor.png");
 }
 
-.second {
-  grid-area: second;
+.other-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.goit-portfolio {
   background-image: url("../images/go-it.jpg");
 }
 
-.third {
-  grid-area: third;
+.css-grid {
   background-image: url("../images/css-grid.png");
 }
 
-.forth {
-  grid-area: forth;
+.holdim {
   background-image: url("../images/holdim.png");
 }
 
-.fifth {
-  grid-area: fifth;
+.my-cv {
   background-image: url("../images/my-cv.png");
 }
 
-.first-portfolio-item,
-.second,
-.third,
-.forth,
-.fifth {
-  margin: 10px;
+.goit-portfolio,
+.css-grid,
+.holdim,
+.my-cv {
+  width: 45%;
+  height: 150px;
+}
+
+.portfolio-item {
+  margin: 20px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -164,18 +177,10 @@ body {
   filter: sepia(100%) hue-rotate(60deg);
 }
 
-.first-portfolio-item:hover,
-.second:hover,
-.third:hover,
-.forth:hover,
-.fifth:hover,
-.first-portfolio-item:focus,
-.second:focus,
-.third:focus,
-.forth:focus,
-.fifth:focus{
+.portfolio-item:hover,
+.portfolio-item:focus {
   filter: sepia(0%) hue-rotate(0deg);
-} 
+}
 
 /* Text on picture */
 .portfolio-link {
