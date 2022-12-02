@@ -63,11 +63,11 @@ body {
   --nav-color: var(--hover-link-text);
 }
 
-.wrapper {
+.nav-wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 1200px;
+  width: 70%;
   margin: 0px auto;
 }
 
@@ -111,71 +111,63 @@ body {
 
 /* Grid with my works */
 .list-portfolio {
-  margin: 30px;
+  margin: 20px 30px;
   width: 90%;
   min-height: 500px;
   height: 70vh;
   list-style: none;
   display: grid;
-  grid-template-areas: "first-project first-project" "first-project first-project" "second third" "forth fifth";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
 }
 
-.first-portfolio-item {
-  grid-area: first-project;
+.other-projects {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+
+.horiseon {
   background-image: url("../images/refactor.png");
 }
 
-.second {
-  grid-area: second;
+.go-it-portfolio {
   background-image: url("../images/go-it.jpg");
 }
 
-.third {
-  grid-area: third;
+.css-grid {
   background-image: url("../images/css-grid.png");
 }
 
-.forth {
-  grid-area: forth;
+.holdim {
   background-image: url("../images/holdim.png");
 }
 
-.fifth {
-  grid-area: fifth;
+.my-cv {
   background-image: url("../images/my-cv.png");
 }
 
-.first-portfolio-item,
-.second,
-.third,
-.forth,
-.fifth {
-  margin: 10px;
+.horiseon,
+.go-it-portfolio,
+.css-grid,
+.holdim,
+.my-cv {
+  width: 100%;
+  height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  display: block;
-  align-content: end;
-  text-decoration: none;
-  position: relative;
   filter: sepia(100%) hue-rotate(60deg);
 }
 
-.first-portfolio-item:hover,
-.second:hover,
-.third:hover,
-.forth:hover,
-.fifth:hover,
-.first-portfolio-item:focus,
-.second:focus,
-.third:focus,
-.forth:focus,
-.fifth:focus{
+.list-portfolio a:hover,
+.list-portfolio a:focus {
   filter: sepia(0%) hue-rotate(0deg);
-} 
+}
 
 /* Text on picture */
 .portfolio-link {
@@ -186,4 +178,18 @@ body {
   padding: 10px;
   margin: 10px;
   display: inline;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav-wrapper {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: medium;
+  }
+
+  .list-with-links {
+    flex-wrap: wrap;
+  }
 }
