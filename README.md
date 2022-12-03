@@ -13,6 +13,10 @@ And at the end we have fully working web-application
 
 ![Example of the working page](./images/web-site-screen1.jpg)
 
+Web-page layout dinamically changes depending on the size of the screen.
+
+![View of the Web-page on phone screen](./images/media-queries.png)
+
 ## Deployment
 
 The project was deployed to github pages and new version will appear each time changes will be pushed to main branch.
