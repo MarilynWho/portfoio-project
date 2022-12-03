@@ -7,15 +7,15 @@ Goal of this Project is to create Portfolio to practice usage of grid and flex C
 
 At the beginning we have an example of the page we would like to create.
 
-![Example of the page we want to create](./images/01-css-challenge-demo.gif)
+> ![Example of the page we want to create](./images/01-css-challenge-demo.gif)
 
 And at the end we have fully working web-application
 
-![Example of the working page](./images/web-site-screen1.jpg)
+> ![Example of the working page](./images/web-site-screen1.jpg)
 
 Web-page layout dinamically changes depending on the size of the screen.
 
-![View of the Web-page on phone screen](./images/media-queries.png)
+> ![View of the Web-page on phone screen](./images/media-queries.png)
 
 ## Deployment
 
